@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Book Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="book-lib.css" />
+    <script src="book-lib.js" defer></script>
+  </head>
+  <body>
+    <header class="lib-heading">
+      <h1>Read-It</h1>
+    </header>
+    <main>
+    <div class="book-container"></div>
+    <button class="book-button"><span class="plus">+</span></button>
+      <section class="book-form">
+        <form>
+          <fieldset class="overlay">
+            <legend>Book Info.</legend>
+            <label for="title" class="label-input-container"
+              ><input
+                type="text"
+                id="title"
+                name="book-title"
+                placeholder=""
+                required
+              /><span class="label-text">Title </span></label
+            >
+            <label for="author" class="label-input-container author"
+              ><input
+                type="text"
+                id="author"
+                name="author-name"
+                placeholder=""
+                required
+              /><span class="label-text">Author </span></label
+            >
+            <label for="pages" class="label-input-container pages"
+              ><input
+                type="number"
+                id="pages"
+                name="book-pages"
+                placeholder=""
+                max="9999"
+                required
+              /><span class="label-text">No. of Pages</span></label
+            >
+            <label for="read-it"
+              >Read this book?
+              <select name="reading-status" id="read-it">
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+                <option value="3">Currently Reading</option>
+              </select></label
+            >
+            <div class="buttons">
+              <button class="add button" type="submit">Add-It</button>
+              <button class="remove button">Cancel-It</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      
+    </main>
+  </body>
+</html>
