@@ -55,8 +55,9 @@ main {
   position: relative;
 }
 fieldset {
-  display: none;
+  display: flex;
   opacity: 0;
+  visibility: hidden;
   flex-direction: column;
   border: 3px solid #7dfff5;
   box-shadow: 0 0px 10px #07baa8, 0 0 20px #07baa8, 0 0 30px #07baa8,
@@ -74,10 +75,11 @@ fieldset {
     rgba(29, 27, 27, 1) 51%,
     rgba(12, 82, 77, 1) 100%
   );
-  transition: opacity 500ms ease-in;
+  transition: all 200ms ease-in;
 }
 fieldset.show {
   opacity: 1;
+  visibility: visible;
 }
 
 fieldset.overlay::after {
