@@ -84,7 +84,8 @@ class Book {
     this.formData.readingStatus.selectedIndex = 0;
   }
   static showForm() {
-    if (bookForm.classList.contains("show")) {
+    // assign and change classes for form's smooth animation
+    if (bookForm.classList.contains("show")) { 
       setTimeout(() => {
         bookForm.classList.remove("show");
       }, 100);
